@@ -1,6 +1,7 @@
 # Here's some strange stuff, remember type it exactly.
 
 days = "Mon Tue Wed Thu Fri Sat Sun"
+# /n allows the string to extend to mulitple lines
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 
 print "Here are the days:", days
