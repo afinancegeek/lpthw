@@ -3,7 +3,8 @@ def snow_days(january, febuary):
 	print "In January we had %d snow days" % january
 	print "In Febuary we had %d snow days" % febuary
 	print "You'd better get a warmer jacket!"
-
+	print "." * 10
+	
 print "We can give the function numbers directly:"
 snow_days(10, 15)
 
