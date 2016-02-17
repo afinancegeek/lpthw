@@ -1,4 +1,4 @@
-# this on is like you scripts with argv
+# this one is like you scripts with argv
 def print_two(*args):
 	arg1, arg2 = args
 	print "arg1: %r, arg2: %r" % (arg1, arg2)
@@ -7,7 +7,7 @@ def print_two(*args):
 def print_two_again(arg1, arg2):
 	print "arg1: %r, arg2: %r" % (arg1, arg2)
 
-# this just take one argument
+# this just takes one argument
 def print_one(arg1):
 	print "arg1: %r" % arg1
 
