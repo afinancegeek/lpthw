@@ -1,5 +1,5 @@
 from sys import exit
-
+# input is a number
 def gold_room():
 	print "This room is full of gold. How much do you take?"
 
@@ -15,7 +15,7 @@ def gold_room():
 	else:
 		dead("You greedy bastard!")
 
-
+# while loop
 def bear_room():
 	print "There is a bear here."
 	print "The bear has a bunch of honey."
@@ -38,7 +38,7 @@ def bear_room():
 		else:
 			print "I got no idea what that means."
 
-
+# if statement
 def cthulhu_room():
 	print "Here you see the great evil Cthulhu."
 	print "He, it, whatever stares at you and you go insane."

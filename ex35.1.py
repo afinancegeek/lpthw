@@ -67,9 +67,9 @@ def start():
 
 	choice = raw_input("> ")
 
-	if choice == "left" ; "Left":
+	if "left" or "Left" in choice:
 		bear_room()
-	elif choice == "right" ; "Right":
+	elif "right" or "Right" in choice:
 		cthulhu_room()
 	else:
 		dead("You stumble around the room until you starve.")
