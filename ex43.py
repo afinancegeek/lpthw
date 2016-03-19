@@ -14,11 +14,12 @@ class Engine(object):
 
 	def play(self):
 		current_scene = self.scene_map.opening_scene()
-		last_scene = se;f.scene_map.next_scene('finished')
+		last_scene = self.scene_map.next_scene('finished')
 
 		while current_scene != last_scene:
 			next_scene_name = current_scene.enter()
 			current_scene = self.scene_map.next_scene(next_scene_name)
+
 
 		current_scene.enter()
 
@@ -52,12 +53,12 @@ class CentralCorridor(Scene):
  		action = raw_input("> ")
 
 		if action == "shoot!":
-			print "Quick on the draw you tank out your blaster and fire it at the Gothon."
+			print "Quick on the draw you yank out your blaster and fire it at the Gothon."
 			print "His clown costume is flowing and moving around his body, which throws"
-			print "off your aim. Your laster hits his costume but misses him entirely. This"
+			print "off your aim. Your laser hits his costume but misses him entirely. This"
 			print "completely ruins his brand new costume his mother bought him, which"
 			print "makes him fly into an insane rage and blast you repeatedly in the face until"
-			print "you are dead. The he eats you."
+			print "you are dead. Then he eats you."
 			return 'death'
 
 		elif action == "dodge!":
@@ -69,14 +70,14 @@ class CentralCorridor(Scene):
 			print 'death'
 
 		elif action == "tell a joke":
-			print "Luck for you they made you learn Gothon insults in the academy."
+			print "Lucky for you they made you learn Gothon insults in the academy."
 			print "You tell the one Gothon joke you know:"
 			print "Lbhe zbgure vf fb sng, hura fur fvgf nebhaq gur ubhfr, fur fvgf nebhaq gur ubhfr."
-			print "The"
-			print "While"
-			print "putting"
+			print "The Gothon stops, tries not to laugh, then busts out laughing and can't move."
+			print "While he's laughing you run up and shoot him square in the head"
+			print "putting him down, then jump through the Weapon Armory door."
 			return 'laser_weapon_armory'
-			
+
 		else:
 			print "DOES NOT COMPUTE!"
 			return 'central_corridor'
@@ -87,8 +88,8 @@ class LaserWeaponAromry(Scene):
 		print "You do a dive roll into the Weapon Armory, crouch and scan the room"
 		print "for more Gothons that might be hiding. It's dead quiet, too quiet."
 		print "You stand up and run the far side of the room and find the"
-		print "neutron bomb in uts constainer. There's a keypad lock on the box"
-		print "and you need the vode to get the bomb out. If you get the code"
+		print "neutron bomb in its constainer. There's a keypad lock on the box"
+		print "and you need the code to get the bomb out. If you get the code"
 		print "wrong 10 times then the lock closes forever and you can't"
 		print "get the bomb. The code is 3 dighits."
 		code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
@@ -112,9 +113,6 @@ class LaserWeaponAromry(Scene):
 			print "ship from their ship and you die"
 
 			return 'death'
-
-
-
 
 
 
